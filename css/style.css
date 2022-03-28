@@ -139,6 +139,29 @@ h4 {
   max-height: 80vh;
 }
 
+.contenedor2 {
+  padding: 20px;
+  max-width: 100vw;
+}
+
+.tituloOALV {
+  display: flex;
+  justify-content: center;
+  font-family: var(--bs-body-font-family);
+  align-items: center;
+  border-bottom: 10cm;
+  color: #1b1414;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  font-family: var(--bs-body-font-family);
+  align-items: center;
+  border-bottom: 10cm;
+  color: #1b1414;
+}
+
 .crop {
   width: 100vw;
 }

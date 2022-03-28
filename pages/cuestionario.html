@@ -1,92 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galeria minerva</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
 
-
-
-</head>
-
-<body>
-
-<header class="barra">
-    <h1 class="galeria">Galeria minerva</h1>
-    <nav class="navbar navbar-expand-lg">
+  <body>
+    <header class="barra">
+      <h1 class="galeria">Galeria minerva</h1>
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-             <ul class="links">
-                    <li>
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="../pages/masSobreNosotros.html">Mas sobre nosotros</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="../pages/cuestionario.html">Cuestionario</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="../pages/donar.html">Donar</a>
-                    </li>
-             </ul>
+              <ul class="links">
+                <li>
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link" href="../pages/obrasAlaVenta.html"
+                    >Obras a la venta</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link" href="../pages/masSobreNosotros.html"
+                    >Mas sobre nosotros</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link" href="../pages/donar.html">Donar</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </nav>
-</header>
+    </header>
+
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Nombre</label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Apellido</label>
+        <input type="password" class="form-control" id="inputPassword4">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Email</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Ej: 000@gmail.com">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">Asunto</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Ej: compra de una obra">
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">Dirección</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">Ciudad</label>
+        <select id="inputState" class="form-select">
+          <option selected>Buenos aires</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label for="inputZip" class="form-label">Codigo postal</label>
+        <input type="text" class="form-control" id="inputZip">
+      </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </form>
 
     <footer>
-            <div>
-              <div class="mediosDeContacto">
-                <h2>Contactanos en nuestras redes sociales</h2>
-                <div class="iconosContacto">
-                <img
-                  class="iconosRedes"
-                  src="../imagenes/wspIcono1.png"
-                  alt="Icono wsp"
-                />
-                <img
-                  class="iconosRedes"
-                  src="../imagenes/insta.png"
-                  alt="Icono Insta"
-                />
-                <img class="iconosRedes" src="../imagenes/mail.png" alt="Icono Mail" /></div>
-              </div>
-              <div class="mediosDePago">
-                <h2>Metodos de pago</h2>
-                <div class="iconosPago">
-                <img  src="../imagenes/visa.png" alt="Visa" />
-                <img
-                  src="../imagenes/mastercard.png"
-                  alt="Mastercard"
-                />
-                <img
-                  src="../imagenes/efectivo.png"
-                  alt="Efectivo"
-                />
-            </div>
-              </div>
-            </div>
-            <div>
-              <p>Como ubicarnos</p>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3894157242257!2d-58.384958284770704!3d-34.594313180462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccab766cb1c8b%3A0x4dad870a4f8bff99!2sCerrito%20%26%20Arenales%2C%20C1061%20CABA!5e0!3m2!1ses-419!2sar!4v1644747208702!5m2!1ses-419!2sar"
-                
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-              ></iframe>
-            </div>
-
+      <div>
+        <div class="mediosDeContacto">
+          <h2>Contactanos en nuestras redes sociales</h2>
+          <div class="iconosContacto">
+            <img
+              class="iconosRedes"
+              src="../imagenes/wspIcono1.png"
+              alt="Icono wsp"
+            />
+            <img
+              class="iconosRedes"
+              src="../imagenes/insta.png"
+              alt="Icono Insta"
+            />
+            <img
+              class="iconosRedes"
+              src="../imagenes/mail.png"
+              alt="Icono Mail"
+            />
+          </div>
+        </div>
+        <div class="mediosDePago">
+          <h2>Metodos de pago</h2>
+          <div class="iconosPago">
+            <img src="../imagenes/visa.png" alt="Visa" />
+            <img src="../imagenes/mastercard.png" alt="Mastercard" />
+            <img src="../imagenes/efectivo.png" alt="Efectivo" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <p>Como ubicarnos</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3894157242257!2d-58.384958284770704!3d-34.594313180462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccab766cb1c8b%3A0x4dad870a4f8bff99!2sCerrito%20%26%20Arenales%2C%20C1061%20CABA!5e0!3m2!1ses-419!2sar!4v1644747208702!5m2!1ses-419!2sar"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
     </footer>
 
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
