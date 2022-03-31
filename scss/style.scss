@@ -1,5 +1,7 @@
 @import "_masSobreNosotros.scss";
 @import "_footer.scss";
+@import './extend.scss';
+@import './mixin.scss';
 
 
 * {
@@ -16,12 +18,11 @@ body {
 }
 
 .barra {
-  background-color: rgb(25, 25, 126);
+  @include noentiendo(rgb(25, 25, 126),center,none);
   width: 100%;
-  display: flex;
+  @extend %disposicion;
   flex-direction: column;
-  align-items: center;
-  justify-content: end;
+  
   font-family: italic;
   color: rgb(241, 214, 60);
 }
@@ -149,3 +150,4 @@ li {
     overflow: hidden;
   }
 }
+

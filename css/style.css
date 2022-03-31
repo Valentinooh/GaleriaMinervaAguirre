@@ -71,6 +71,12 @@ iframe {
     height: 300px;
   }
 }
+.barra {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 * {
   box-sizing: border-box;
   margin: 0%;
@@ -83,11 +89,10 @@ body {
 
 .barra {
   background-color: #19197e;
+  justify-content: center;
+  border: none;
   width: 100%;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: end;
   font-family: italic;
   color: #f1d63c;
 }

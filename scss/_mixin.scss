@@ -1,0 +1,6 @@
+ @mixin noentiendo ($color,$justify,$borde){
+     background-color: $color;
+     justify-content: $justify;
+     border: $borde;
+     
+ }
