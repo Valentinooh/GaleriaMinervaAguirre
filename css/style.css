@@ -121,6 +121,9 @@ h2 {
   flex-direction: row;
   margin-bottom: 0;
 }
+.links .menu {
+  display: none;
+}
 .links a {
   color: #f1d63c;
 }
@@ -205,10 +208,42 @@ li {
   padding: 10px;
 }
 
-@media screen and (min-width: 768px) {
-  .obrasFamosas li {
-    list-style: none;
-    padding: 10px 30px;
+@media screen and (max-width: 850px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .obrasFamosas {
+    flex-direction: column;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+  .links .menu {
+    display: block;
+  }
+  .links li {
+    display: none;
+  }
+  .links li .nav-link {
+    display: none;
+  }
+  .links:hover {
+    align-items: center;
+  }
+  .links:hover li {
+    display: block;
+  }
+  .links:hover li .nav-link {
+    display: block;
+  }
+  .links:hover li .nav-link:hover {
+    display: block;
   }
 }
 @media screen and (min-width: 1441px) {

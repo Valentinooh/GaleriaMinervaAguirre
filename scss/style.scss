@@ -14,8 +14,7 @@ body {
   background-image: url(../imagenes/fondoMedio.png);
 }
 
-@media screen and (min-width: 480px) {
-}
+
 
 .barra {
   @include noentiendo(rgb(25, 25, 126),center,none);
@@ -49,13 +48,17 @@ h2 {
   display: flex;
   flex-direction: row;
   margin-bottom: 0;
+  .menu{
+    display: none;}
     a {
       color: rgb(241, 214, 60);
       &:hover {
         text-decoration: underline;
       }
     }
+    
 }
+
 h4 {
   color: black;
   font-family: italic;
@@ -134,14 +137,44 @@ li {
 
 
 
-@media screen and (min-width: 768px) {
-  .obrasFamosas {
-    li {
-      list-style: none;
-      padding: 10px 30px;
-    }
+
+@media screen and ( max-width: 850px)  {
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
+ .obrasFamosas{
+  
+   flex-direction: column;
+ }
+  .links{
+    display: flex;
+    flex-direction: column;
+    .menu{
+      display: block;
+    }
+    li{display: none;
+      .nav-link{display: none;
+      }
+    }
+    &:hover{
+      align-items: center;
+      li{display: block;
+        .nav-link{
+          display: block;
+          &:hover{
+            display: block;
+          }
+          }
+      }
+    }
+   }
+  
 }
+
+
 
 @media screen and (min-width: 1441px) {
   .center-cropped {
